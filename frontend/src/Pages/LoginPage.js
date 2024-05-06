@@ -20,7 +20,7 @@ const LoginPage = () => {
       toast.error('Please select an option')
     }
     else if(logintype ==='old user'){
-      navigate('/mobileno')
+      navigate('/Login1')
     }
     else{
       navigate('/yojanaCard')
