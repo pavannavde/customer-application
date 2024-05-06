@@ -38,7 +38,7 @@ app.use(
 
 
 app.get("/", (req, res) => {
-  return res.json("Hello World");
+   res.send("Hello World");
 });
 
 //register route
