@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 const MobilenoPage = () => {
   const[mobile,setMobile] =useState();
   const navigate = useNavigate();
-  axios.defaults.withCredentials = true;
+  
 
 
   function handleChange(e){

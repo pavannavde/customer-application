@@ -11,7 +11,6 @@ const PresonaldetailPage = () => {
 
   async function handleClick(){
     console.log(personalDetail)
-    axios.defaults.withCredentials = true;
     try{
       const res = await axios.post('https://customer-application-api.vercel.app/personalDetail',personalDetail)
       console.log(res)
