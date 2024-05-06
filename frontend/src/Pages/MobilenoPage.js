@@ -17,7 +17,7 @@ const MobilenoPage = () => {
   async function postData(){
     const address = JSON.parse(localStorage.getItem('address'))
     const userObj = {...address,mobile:mobile}
-    const response = await axios.post('http://localhost:8000/register',userObj);
+    const response = await axios.post('https://customer-application-api.vercel.app/register',userObj);
     console.log(response);
     if(response.data.status === 200){
        navigate('/otpS')

@@ -12,7 +12,7 @@ const PresonaldetailPage = () => {
   async function handleClick(){
     console.log(personalDetail)
     try{
-      const res = await axios.post('http://localhost:8000/personalDetail',personalDetail)
+      const res = await axios.post('https://customer-application-api.vercel.app/personalDetail',personalDetail)
       console.log(res)
       if(res.data.status === 200){
         navigate('/submission1')

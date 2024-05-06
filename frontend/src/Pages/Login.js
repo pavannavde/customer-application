@@ -15,7 +15,7 @@ const Login = () => {
     }
      async function handleClick(){ 
         try{
-            const res = await axios.post('http://localhost:8000/login',{mobile});
+            const res = await axios.post('https://customer-application-api.vercel.app/login',{mobile});
             console.log(res.data);
             if(res.data.status === 200){
                 navigate('/submission1')
