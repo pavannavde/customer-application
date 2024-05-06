@@ -79,7 +79,7 @@ app.post("/register", async (req, res) => {
     res.json({ status: 200, message: "success", data: user });
   } catch (err) {
     console.log(err);
-    res.json({ status: 500, message: "Internal server error" });
+    res.json({ status: 500, message: "Pavan server error" });
   }
 });
 
@@ -110,6 +110,7 @@ app.post("/login", async (req, res) => {
     res.json({ status: 500, message: "Internal server error" });
   }
 });
+
 app.get("/", (req, res) => {
   return res.send("Hello World");
 });
