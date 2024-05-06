@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cors({
     origin:["https://customer-application-frontend.vercel.app"],
     methods: ["GET", "POST"],
-    credentials: true,
+    credentials: true
 }));
 app.use(express.urlencoded({ extended: true }));
 app.use(
