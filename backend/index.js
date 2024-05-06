@@ -84,7 +84,7 @@ app.post("/register", async (req, res) => {
 });
 
 //post personal data
-app.post("/personalDetail", async (req, res) => {
+app.post("/personalDetail",(req, res) => {
   const { fullname, gender, ageOrdob } = req.body;
   if (!fullname || !gender || !ageOrdob) {
     return res.json({ status: 400, message: "All fields are required" });
@@ -111,7 +111,7 @@ app.post("/login", async (req, res) => {
   }
 });
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  return res.send("Hello World");
 });
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
