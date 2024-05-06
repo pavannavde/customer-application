@@ -5,7 +5,6 @@ const cors = require("cors");
 const session = require("express-session");
 const mongodbSession = require("connect-mongodb-session")(session);
 require("dotenv").config();
-const { isAuth } = require("./middleware/authMiddleware");
 
 //constants
 const app = express();
