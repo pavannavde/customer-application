@@ -37,6 +37,11 @@ app.use(
   })
 );
 
+
+app.get("/", (req, res) => {
+  return res.json("Hello World");
+});
+
 //register route
 app.post("/register", async (req, res) => {
   const { mobile, state, district, pincode } = req.body;
@@ -111,8 +116,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  return res.json("Hello World");
-});
+
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
