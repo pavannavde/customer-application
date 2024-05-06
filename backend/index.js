@@ -10,13 +10,13 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT;
 const store = new mongodbSession({
-  uri: process.env.MONGO_URI,
+  uri: 'mongodb+srv://pavannavde:12345@cluster0.ohji7jw.mongodb.net/CustomerDB',
   collection: "sessions",
 });
 
 //mongodb connection
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect('mongodb+srv://pavannavde:12345@cluster0.ohji7jw.mongodb.net/CustomerDB')
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
