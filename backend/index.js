@@ -79,7 +79,7 @@ app.post("/register", async (req, res) => {
     res.json({ status: 200, message: "success", data: user });
   } catch (err) {
     console.log(err);
-    res.json({ status: 500, message: "Pavan server error" });
+    res.json({ status: 500, message: " Database error" });
   }
 });
 
@@ -112,7 +112,7 @@ app.post("/login", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  return res.send("Hello World");
+  return res.json("Hello World");
 });
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
