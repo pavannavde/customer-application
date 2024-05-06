@@ -22,7 +22,7 @@ mongoose
 
 app.use(express.json());
 app.use(cors({
-    origin:"https://customer-application-frontend.vercel.app/",
+    origin:"https://customer-application-frontend.vercel.app",
     methods: ["GET", "POST"],
     credentials: true
 }));
