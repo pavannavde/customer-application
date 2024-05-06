@@ -1,0 +1,11 @@
+.nextBtn{
+    width:80%;
+    background-color: rgba(79, 40, 94, 1);
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+}

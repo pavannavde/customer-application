@@ -1,0 +1,10 @@
+
+.inputEle>select{
+    width:90%;
+    background-color: rgba(229, 226, 222, 1);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: gray;
+}
