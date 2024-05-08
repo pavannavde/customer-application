@@ -102,7 +102,7 @@ app.post("/login", async (req, res) => {
   try {
     const user = await userModel.findOne({ mobile });
     if (!user) {
-      return res.json({ status: 400, message: "User not found,please register as new user" });
+      return res.json({ status: 400, message: "User not found, Please register as new user" });
     }
     req.session.isAuth = true;
     req.session.user = {
