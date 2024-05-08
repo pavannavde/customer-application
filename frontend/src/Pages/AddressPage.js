@@ -19,8 +19,14 @@ const AddressPage = () => {
     {
 
       console.log(address)
-      localStorage.setItem('address',JSON.stringify(address))
-      navigate('/mobileno')
+      if(address.pincode.length === 6){
+        localStorage.setItem('address',JSON.stringify(address))
+        navigate('/mobileno')
+      }
+      else{
+        toast.error("pincode must be six digit")
+      }
+      
     }
     else{
       // alert('Please enter all details')

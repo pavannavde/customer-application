@@ -5,6 +5,10 @@ import { useNavigate } from 'react-router-dom';
 
 const OtpPage = () => {
   const navigate = useNavigate();
+
+   function handleClick(){
+    navigate('/personaldetail');
+   }
   return (
     <div className='languagePage'>
       <div className='navDiv'>
@@ -19,7 +23,7 @@ const OtpPage = () => {
         <input type='number'className='inputEle'/>
        </div>
        <p style={{color:'rgba(79, 40, 94, 1)'}}>Did not receive OTP ?Resend</p>
-       <Button/>
+       <Button handleClick={handleClick}/>
       </div>
     </div>
   )
